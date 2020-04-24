@@ -78,7 +78,8 @@ export const hireMeButton = css`
   font-size: 0.75rem;
   position: relative;
   z-index: 2;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+
   &:hover {
     cursor: pointer;
     background-color: #ffdbef;

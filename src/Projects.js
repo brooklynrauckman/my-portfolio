@@ -18,7 +18,7 @@ function Projects() {
       {config.projects.map((project) => (
         <div css={styles.projectView(project.id === activeProject)}>
           <div css={styles.projectDetails}>
-            <h2 css={styles.projectTitle}>{project.title}</h2>
+            <p css={styles.projectTitle}>{project.title}</p>
             <p css={styles.projectParagraph}>{project.caption}</p>
             <div css={styles.skillIcons}>
               {project.tools.map((tool) => (

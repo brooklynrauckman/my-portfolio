@@ -5,8 +5,7 @@ export const skills = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0 6rem 0;
-  overflow-x: hidden;
+  padding: 5rem 0 5rem 0;
   position: relative;
 `;
 
@@ -17,6 +16,8 @@ export const skillsTitle = css`
   @media (max-width: 780px) {
     position: relative;
     z-index: 2;
+    font-size: 1.75rem;
+    margin-bottom: -0.5rem;
   }
 `;
 
@@ -65,7 +66,8 @@ export const skillIconCircle = css`
   background-color: #fff;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
   transform: scale(1);
-  transition: 0.2s;
+  transition: transform 0.2s ease-in-out;
+
   &:hover {
     transform: scale(1.1);
   }
@@ -77,13 +79,12 @@ export const squareGradient = css`
   position: absolute;
   z-index: 1;
   right: -12rem;
-  margin-top: 2rem;
-  background: linear-gradient(90deg, white 0%, #f6f8fc 100%);
+  background: linear-gradient(#f6f8fc, white);
   transform: rotate(45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
-    right: -20rem;
-    margin-top: -25rem;
+    right: -17rem;
+    top: 7rem;
   }
 `;
 
@@ -92,13 +93,12 @@ export const squareGradientTwo = css`
   width: 35rem;
   position: absolute;
   z-index: 1;
-  left: -4rem;
-  margin-top: -2rem;
-  background: linear-gradient(90deg, white, #f6f8fc);
-  transform: rotate(-45deg);
+  left: -12rem;
+  background: linear-gradient(white, #f6f8fc);
+  transform: rotate(45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
-    left: -13rem;
-    margin-top: 18rem;
+    left: -10rem;
+    bottom: 12rem;
   }
 `;

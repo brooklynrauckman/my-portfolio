@@ -56,6 +56,7 @@ export const previewScroll = css`
   @media (max-width: 780px) {
     overflow-x: scroll;
     margin: 0;
+    padding: 0 1rem;
     &::-webkit-scrollbar {
       width: 0px;
       background: transparent;
@@ -113,9 +114,9 @@ export const projectView = (activeProject) => css`
   display: ${activeProject ? "flex" : "none"};
   align-items: start;
   justify-content: space-around;
-  margin-top: 4rem;
+  padding-top: 4rem;
   @media (max-width: 780px) {
-    margin: 1rem;
+    padding: 1rem 2rem 0 2rem;
     flex-direction: column;
     align-items: center;
   }
@@ -151,10 +152,9 @@ export const skillIconCircle = css`
 
 export const projectDetails = css`
   max-width: 350px;
-  position: relative;
-  z-index: 2;
+
   @media (max-width: 780px) {
-    margin: 0 1rem 3rem 1rem;
+    padding: 0 1rem 3rem 1rem;
     max-width: 450px;
     width: 100%;
   }
@@ -171,11 +171,8 @@ export const projectBox = css`
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-  position: relative;
-  z-index: 1;
   overflow: visible;
   @media (max-width: 780px) {
-    z-index: 1;
     margin: 0;
     max-width: 450px;
   }
@@ -196,7 +193,8 @@ export const visitSiteButton = css`
   color: #fa72ce;
   font-weight: bold;
   font-size: 0.75rem;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+
   &:hover {
     cursor: pointer;
     background-color: #ffdbef;
@@ -233,7 +231,8 @@ export const viewCodeButton = css`
   color: #181616;
   font-weight: bold;
   font-size: 0.75rem;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+
   &:hover {
     cursor: pointer;
     background-color: #e0e0e0;
@@ -264,17 +263,19 @@ export const projectTitle = css`
 export const projectParagraph = css`
   font-size: 1.125rem;
   color: #021156;
+  line-height: 1.5rem;
 `;
 
 export const dots = css`
   height: 20rem;
   position: absolute;
-  right: 4rem;
+  right: -5rem;
+  bottom: -8rem;
   z-index: -1;
   margin-top: 20rem;
   @media (max-width: 780px) {
-    right: -8rem;
-    top: 0rem;
+    right: -10rem;
+    bottom: -6rem;
   }
 `;
 
@@ -283,14 +284,13 @@ export const squareGradient = css`
   width: 35rem;
   position: absolute;
   z-index: -1;
-  right: -6rem;
-  margin-top: -2rem;
-  background: linear-gradient(to right, #f6f8fc, transparent);
+  right: -15rem;
+  background: linear-gradient(#f6f8fc, white);
   transform: rotate(45deg);
   border-radius: 20px;
   @media (max-width: 780px) {
-    right: 14rem;
-    margin-top: 2rem;
+    right: 3rem;
+    top: 4rem;
   }
 `;
 
@@ -298,14 +298,14 @@ export const squareGradientTwo = css`
   height: 35rem;
   width: 35rem;
   position: absolute;
-  z-index: 1;
-  left: 1rem;
-  margin-top: 5rem;
-  background: linear-gradient(to right, #f6f8fc, transparent);
-  transform: rotate(-45deg);
+  z-index: -1;
+  left: -14rem;
+  bottom: 0;
+  background: linear-gradient(white, #f6f8fc);
+  transform: rotate(45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
-    left: -20rem;
-    margin-top: 36rem;
+    left: -14rem;
+    bottom: -1rem;
   }
 `;

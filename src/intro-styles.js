@@ -7,11 +7,12 @@ export const intro = css`
   margin: 0 0 6rem 0;
   position: relative;
   z-index: 2;
-  padding-top: 6rem;
+  padding-top: 10rem;
   @media (max-width: 780px) {
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
+    padding-top: 7rem;
   }
 `;
 
@@ -31,7 +32,7 @@ export const introContent = css`
   z-index: 2;
   @media (max-width: 780px) {
     max-width: 300px;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -61,9 +62,9 @@ export const introPic = css`
   @media (max-width: 780px) {
     padding-top: 0;
     margin-top: -7rem;
-    margin-right: -7rem;
+    margin-right: -5rem;
     z-index: 1;
-    max-width: 350px;
+    max-width: 300px;
   }
 `;
 
@@ -77,7 +78,8 @@ export const seeProjectsButton = css`
   color: #fffcfe;
   font-weight: bold;
   font-size: 0.75rem;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+
   &:hover {
     cursor: pointer;
     background-color: #ff3bbf;
@@ -102,15 +104,15 @@ export const squareGradient = css`
   width: 35rem;
   position: absolute;
   z-index: -1;
-  left: -11rem;
-  margin-top: 1rem;
-  background: linear-gradient(to bottom, #f6f8fc, transparent);
-  transform: rotate(45deg);
+  left: -10rem;
+  top: 12rem;
+  background: linear-gradient(#f6f8fc, white);
+  transform: rotate(-45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
     height: 25rem;
     width: 25rem;
-    left: -8rem;
-    margin-top: 1rem;
+    left: -12rem;
+    top: 7rem;
   }
 `;

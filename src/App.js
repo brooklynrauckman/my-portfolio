@@ -5,16 +5,20 @@ import Intro from "./Intro.js";
 import Projects from "./Projects.js";
 import Skills from "./Skills.js";
 import About from "./About.js";
+import Nav from "./Nav";
 
 function App() {
   return (
-    <div css={styles.app}>
+    <div css={styles.wrapper}>
       <img src="/triangle.png" css={styles.triangleGradient} />
 
-      <Intro />
-      <Projects />
-      <Skills />
-      <About />
+      <Nav />
+      <div css={styles.app}>
+        <Intro />
+        <Projects />
+        <Skills />
+        <About />
+      </div>
     </div>
   );
 }

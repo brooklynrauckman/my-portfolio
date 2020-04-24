@@ -5,10 +5,9 @@ export const about = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
   position: relative;
   @media (max-width: 780px) {
-    padding: 4rem 1rem 0 1rem;
+    padding: 2rem 2rem 0 2rem;
   }
 `;
 
@@ -30,7 +29,8 @@ export const aboutTitle = css`
   font-size: 3rem;
   color: #021156;
   @media (max-width: 780px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-top: 1rem;
   }
 `;
 
@@ -52,7 +52,8 @@ export const resumeButton = css`
   background-color: #fff1f9;
   font-weight: bold;
   font-size: 0.75rem;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+
   &:hover {
     cursor: pointer;
     background-color: #ffdbef;
@@ -72,7 +73,8 @@ export const contactButton = css`
   color: #fffcfe;
   font-weight: bold;
   font-size: 0.75rem;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+
   &:hover {
     cursor: pointer;
     background-color: #ff3bbf;
@@ -107,13 +109,13 @@ export const squareGradient = css`
   width: 35rem;
   position: absolute;
   z-index: 1;
-  right: 30rem;
-  margin-top: 1rem;
-  background: linear-gradient(to right, #f6f8fc, transparent);
-  transform: rotate(-45deg);
+  right: 17rem;
+  top: 7rem;
+  background: linear-gradient(#f6f8fc, white);
+  transform: rotate(45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
-    right: -3rem;
-    margin-top: -10rem;
+    right: -4rem;
+    top: 9rem;
   }
 `;
