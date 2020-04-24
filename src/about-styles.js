@@ -6,7 +6,7 @@ export const about = css`
   justify-content: center;
   align-items: center;
   position: relative;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     padding: 2rem 2rem 0 2rem;
   }
 `;
@@ -28,7 +28,7 @@ export const aboutTitle = css`
   font-family: Roboto Slab, serif;
   font-size: 3rem;
   color: #021156;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     font-size: 2rem;
     padding-top: 1rem;
   }
@@ -114,7 +114,7 @@ export const squareGradient = css`
   background: linear-gradient(#f6f8fc, white);
   transform: rotate(45deg);
   border-radius: 30px;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     right: -4rem;
     top: 9rem;
   }

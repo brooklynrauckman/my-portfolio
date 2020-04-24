@@ -6,7 +6,7 @@ export const projects = css`
   margin: 6rem 0;
   z-index: 1;
   position: relative;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     margin-top: 2rem;
   }
 `;
@@ -19,7 +19,7 @@ export const sideScroll = css`
   position: relative;
   z-index: 2;
   padding: 0 1rem;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     padding: 0;
   }
 }
@@ -34,7 +34,7 @@ export const scrollArrowCircle = css`
   &:hover {
     cursor: pointer;
   }
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;
@@ -53,7 +53,7 @@ export const previewScroll = css`
   overflow-x: hidden;
   justify-content: flex-start;
 
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     overflow-x: scroll;
     margin: 0;
     padding: 0 1rem;
@@ -115,7 +115,7 @@ export const projectView = (activeProject) => css`
   align-items: start;
   justify-content: space-around;
   padding-top: 4rem;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     padding: 1rem 2rem 0 2rem;
     flex-direction: column;
     align-items: center;
@@ -153,7 +153,7 @@ export const skillIconCircle = css`
 export const projectDetails = css`
   max-width: 350px;
 
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     padding: 0 1rem 3rem 1rem;
     max-width: 450px;
     width: 100%;
@@ -172,7 +172,7 @@ export const projectBox = css`
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
   overflow: visible;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     margin: 0;
     max-width: 450px;
   }
@@ -273,7 +273,7 @@ export const dots = css`
   bottom: -8rem;
   z-index: -1;
   margin-top: 20rem;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     right: -10rem;
     bottom: -6rem;
   }
@@ -288,7 +288,7 @@ export const squareGradient = css`
   background: linear-gradient(#f6f8fc, white);
   transform: rotate(45deg);
   border-radius: 20px;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     right: 3rem;
     top: 4rem;
   }
@@ -304,7 +304,7 @@ export const squareGradientTwo = css`
   background: linear-gradient(white, #f6f8fc);
   transform: rotate(45deg);
   border-radius: 30px;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     left: -14rem;
     bottom: -1rem;
   }

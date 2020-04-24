@@ -13,7 +13,7 @@ export const skillsTitle = css`
   font-family: Roboto Slab, serif;
   font-size: 2.25rem;
   color: #021156;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     position: relative;
     z-index: 2;
     font-size: 1.75rem;
@@ -33,7 +33,7 @@ export const skillContainer = css`
   margin: 0 4rem 4rem 0;
   position: relative;
   z-index: 2;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     margin: 0 3rem 3rem 0;
   }
 `;
@@ -45,7 +45,7 @@ export const skillIcons = css`
   align-items: center;
   justify-content: space-around;
   margin: 5rem 0 5rem 4.5rem;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     margin: 5rem 0 5rem 3rem;
   }
 `;
@@ -82,7 +82,7 @@ export const squareGradient = css`
   background: linear-gradient(#f6f8fc, white);
   transform: rotate(45deg);
   border-radius: 30px;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     right: -17rem;
     top: 7rem;
   }
@@ -97,7 +97,7 @@ export const squareGradientTwo = css`
   background: linear-gradient(white, #f6f8fc);
   transform: rotate(45deg);
   border-radius: 30px;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     left: -10rem;
     bottom: 12rem;
   }

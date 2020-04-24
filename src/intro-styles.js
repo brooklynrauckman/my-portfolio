@@ -8,7 +8,7 @@ export const intro = css`
   position: relative;
   z-index: 2;
   padding-top: 10rem;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
@@ -27,12 +27,12 @@ export const introContent = css`
   max-width: 325px;
   align-self: flex-start;
   height: 420px;
-  margin-left: 8rem;
+  padding-left: 8rem;
   position: relative;
   z-index: 2;
-  @media (max-width: 780px) {
-    max-width: 300px;
-    margin-left: 2rem;
+  @media (max-width: 820px) {
+    max-width: 350px;
+    padding: 0 2rem;
   }
 `;
 
@@ -40,7 +40,7 @@ export const introTitle = css`
   font-family: Roboto Slab, serif;
   font-size: 3rem;
   color: #021156;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     font-size: 2.5rem;
   }
 `;
@@ -59,11 +59,14 @@ export const introPic = css`
   max-width: 450px;
   padding-top: 1.5rem;
   margin-right: -2rem;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     padding-top: 0;
     margin-top: -7rem;
     margin-right: -5rem;
     z-index: 1;
+    max-width: 375px;
+  }
+  @media (max-width: 550px) {
     max-width: 300px;
   }
 `;
@@ -94,7 +97,7 @@ export const centeredButton = css`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     justify-content: start;
   }
 `;
@@ -109,7 +112,7 @@ export const squareGradient = css`
   background: linear-gradient(#f6f8fc, white);
   transform: rotate(-45deg);
   border-radius: 30px;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     height: 25rem;
     width: 25rem;
     left: -12rem;

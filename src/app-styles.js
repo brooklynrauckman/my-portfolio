@@ -11,7 +11,7 @@ export const app = css`
   background-color: white;
   position: relative;
 
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     overflow-x: hidden;
   }
 `;
@@ -28,7 +28,7 @@ export const triangleGradient = css`
 export const wrapper = css`
   position: relative;
 
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     overflow-x: hidden;
   }
 `;

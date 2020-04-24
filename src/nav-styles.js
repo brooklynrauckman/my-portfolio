@@ -16,7 +16,7 @@ export const navLinks = css`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;
@@ -38,7 +38,7 @@ export const menuLink = css`
 
 export const menu = css`
   display: none;
-  @media (max-width: 780px) {
+  @media (max-width: 820px) {
     display: flex;
     justify-content: center;
     align-items: center;
