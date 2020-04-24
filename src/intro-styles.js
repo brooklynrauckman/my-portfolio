@@ -24,10 +24,10 @@ export const dot = css`
 `;
 
 export const introContent = css`
-  max-width: 325px;
+  max-width: 450px;
   align-self: flex-start;
   height: 420px;
-  padding-left: 8rem;
+  padding-left: 4rem;
   position: relative;
   z-index: 2;
   @media (max-width: 820px) {
@@ -57,11 +57,11 @@ export const introPic = css`
   align-self: flex-end;
   margin-right: 2rem;
   max-width: 450px;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
   margin-right: -2rem;
   @media (max-width: 820px) {
     padding-top: 0;
-    margin-top: -7rem;
+    margin-top: -4rem;
     margin-right: -5rem;
     z-index: 1;
     max-width: 375px;
@@ -107,7 +107,7 @@ export const squareGradient = css`
   width: 35rem;
   position: absolute;
   z-index: -1;
-  left: -10rem;
+  left: -12rem;
   top: 12rem;
   background: linear-gradient(#f6f8fc, white);
   transform: rotate(-45deg);

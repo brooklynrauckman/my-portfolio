@@ -1,6 +1,5 @@
 import React from "react";
 import * as styles from "./skills-styles.js";
-import { css } from "@emotion/core";
 import config from "./config.js";
 
 function Skills() {
@@ -11,10 +10,14 @@ function Skills() {
       <h1 css={styles.skillsTitle}>What I Build With</h1>
       <div css={styles.skillIcons}>
         {config.skills.map((skill) => (
-          <div css={styles.skillContainer}>
+          <div key={skill.id} css={styles.skillContainer}>
             <a href={skill.link} target="blank">
               <div css={styles.skillIconCircle}>
-                <img src={skill.icon} css={styles.skillIcon} />
+                <img
+                  src={skill.icon}
+                  css={styles.skillIcon}
+                  alt={skill.title}
+                />
               </div>
             </a>
             <p css={styles.skillText}>{skill.title}</p>

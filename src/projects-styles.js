@@ -42,6 +42,12 @@ export const scrollArrowCircle = css`
 export const scrollArrow = css`
   height: 1.5rem;
   width: 1.5rem;
+  transform: rotate(180deg);
+`;
+
+export const scrollArrowLeft = css`
+  height: 1.5rem;
+  width: 1.5rem;
 `;
 
 export const previewScroll = css`
@@ -69,7 +75,7 @@ export const previewConatainer = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   opacity: 0.25;
 `;
 
@@ -113,7 +119,7 @@ export const previewTitle = css`
 export const projectView = (activeProject) => css`
   display: ${activeProject ? "flex" : "none"};
   align-items: start;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 4rem;
   @media (max-width: 820px) {
     padding: 1rem 2rem 0 2rem;
@@ -152,6 +158,7 @@ export const skillIconCircle = css`
 
 export const projectDetails = css`
   max-width: 350px;
+  margin-right: 2rem;
 
   @media (max-width: 820px) {
     padding: 0 1rem 3rem 1rem;
@@ -168,6 +175,7 @@ export const projectBox = css`
   width: 100%;
   padding: 1rem;
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
@@ -254,7 +262,7 @@ export const projectLinks = css`
 `;
 
 export const projectTitle = css`
-  padding-top: 1rem;
+  padding-top: 0.75rem;
   font-size: 1.875rem;
   font-weight: bold;
   color: #021156;
@@ -307,5 +315,17 @@ export const squareGradientTwo = css`
   @media (max-width: 820px) {
     left: -14rem;
     bottom: -1rem;
+  }
+`;
+
+export const video = css`
+  height: 530px;
+  background-color: white;
+  border-radius: 13px;
+  outline: none;
+  &::-webkit-media-controls-panel {
+    background-image: none !important;
+    filter: brigtness(0.8);
+    filter: invert(1);
   }
 `;

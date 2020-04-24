@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { css } from "@emotion/core";
 import * as styles from "./nav-styles.js";
 
 function Nav() {
   const [menu, toggleMenu] = useState(false);
   return (
     <div css={styles.nav}>
-      <img css={styles.navLogo} src="/logo.svg" />
+      <img css={styles.navLogo} src="/logo.svg" alt="logo" />
       <div css={styles.navLinks}>
         <a href="#projects" css={styles.navLink}>
           Projects
@@ -27,10 +26,10 @@ function Nav() {
           <button css={styles.hireMeButton}>Hire Me</button>
         </a>
         <div css={styles.menu} onClick={() => toggleMenu(!menu)}>
-          <img src="/menu.svg" />
+          <img src="/menu.svg" alt="" />
         </div>
         <div css={styles.menuItems(menu)}>
-          <img css={styles.navLogo} src="/logo.svg" />
+          <img css={styles.navLogo} src="/logo.svg" alt="logo" />
           <div>
             <a href="#projects" css={styles.menuLink}>
               Projects
@@ -42,7 +41,12 @@ function Nav() {
               About
             </a>
           </div>
-          <img src="/close.svg" onClick={() => toggleMenu(!menu)} />
+          <img
+            css={styles.close}
+            src="/close.svg"
+            alt=""
+            onClick={() => toggleMenu(!menu)}
+          />
         </div>
       </div>
     </div>

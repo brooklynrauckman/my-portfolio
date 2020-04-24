@@ -4,9 +4,9 @@ const projects = [
     app: "",
     code: "https://github.com/brooklynrauckman/records",
     preview: "/records-shot.png",
-    thumbnail: "/records-shot.png",
+    thumbnail: "/records.mp4",
     caption:
-      "Use this native app to keep your collection of records up-to-date. Search/filter for specific records.",
+      "Use this native app to keep your collection of records up-to-date. Search or sort your collection to find specific records.",
     tools: [
       "/html.svg",
       "/css.svg",
@@ -15,6 +15,8 @@ const projects = [
       "/firebase.svg",
       "/git.svg",
     ],
+    media: "video",
+    poster: "/records.png",
     id: "records",
   },
   {
@@ -33,6 +35,7 @@ const projects = [
       "/netlify.svg",
       "/git.svg",
     ],
+    media: "image",
     id: "swaps",
   },
   {
@@ -54,6 +57,7 @@ const projects = [
       "/heroku.svg",
       "/git.svg",
     ],
+    media: "image",
     id: "space",
   },
   {
@@ -73,6 +77,7 @@ const projects = [
       "/netlify.svg",
       "/git.svg",
     ],
+    media: "image",
     id: "challenge",
   },
   {
@@ -91,6 +96,7 @@ const projects = [
       "/netlify.svg",
       "/git.svg",
     ],
+    media: "image",
     id: "freedom",
   },
 ];

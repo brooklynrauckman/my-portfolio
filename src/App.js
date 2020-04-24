@@ -1,5 +1,4 @@
 import React from "react";
-import { css } from "@emotion/core";
 import * as styles from "./app-styles.js";
 import Intro from "./Intro.js";
 import Projects from "./Projects.js";
@@ -10,7 +9,7 @@ import Nav from "./Nav";
 function App() {
   return (
     <div css={styles.wrapper}>
-      <img src="/triangle.png" css={styles.triangleGradient} />
+      <img src="/triangle.png" css={styles.triangleGradient} alt="" />
 
       <Nav />
       <div css={styles.app}>

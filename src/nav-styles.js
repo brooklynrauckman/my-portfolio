@@ -6,7 +6,7 @@ export const nav = css`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 1.25rem 2rem 0rem 2rem;
+  padding: 1.25rem 2rem;
   position: relative;
   overflow-x: hidden;
 `;
@@ -44,6 +44,15 @@ export const menu = css`
     align-items: center;
     padding-left: 1.5rem;
     z-index: 1;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+`;
+
+export const close = css`
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -55,7 +64,7 @@ export const menuItems = (isActive) => css`
   left: 0;
   background-color: white;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem;
   z-index: 2;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   transform: ${isActive ? "translateY(0)" : "translateY(-500px)"};
