@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Reocrds",
+    title: "Records",
     app: "",
     code: "https://github.com/brooklynrauckman/records",
     preview: "/records-shot.png",

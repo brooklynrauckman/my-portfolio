@@ -8,6 +8,9 @@ export const nav = css`
   width: 100vw;
   padding: 1.25rem 2rem;
   margin: 0 0 6rem 0;
+  @media (max-width: 780px) {
+    padding: 1.25rem 1rem;
+  }
 `;
 
 export const navLinks = css`
@@ -15,7 +18,7 @@ export const navLinks = css`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;
@@ -32,30 +35,33 @@ export const menuLink = css`
   text-decoration: none;
   color: inherit;
   font-size: 0.95rem;
+  padding: 0 1rem;
 `;
 
 export const menu = css`
   display: none;
-  @media (max-width: 1024px) {
-    display: unset;
+  @media (max-width: 780px) {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6px 0 0 1.5rem;
-    position: relative;
+    padding-left: 1.5rem;
     z-index: 1;
   }
 `;
 
-export const menuItems = css`
+export const menuItems = (isActive) => css`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
-  z-index: -1;
-  top: 3rem;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  padding: 2rem 1rem;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transform: ${isActive ? "translateY(0)" : "translateY(-500px)"};
+  transition: transform 0.2s ease-in-out;
 `;
 
 export const navLogo = css`
@@ -74,8 +80,10 @@ export const hireMeButton = css`
   font-size: 0.75rem;
   position: relative;
   z-index: 2;
+  transition: 0.2s;
   &:hover {
     cursor: pointer;
+    background-color: #ffdbef;
   }
 `;
 

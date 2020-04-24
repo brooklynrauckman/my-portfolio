@@ -26,7 +26,7 @@ function SideScroll(props) {
         css={styles.scrollArrowCircle}
         id="slideBack"
         onClick={() => {
-          sideScroll(document.getElementById("container"), "left", 25, 400, 10);
+          sideScroll(document.getElementById("container"), "left", 10, 400, 10);
         }}
       >
         <svg
@@ -50,7 +50,13 @@ function SideScroll(props) {
       </div>
       <div css={styles.previewScroll} id="container">
         {config.projects.map((project) => (
-          <div css={styles.previewConatainer}>
+          <div
+            css={
+              activeProject === project.id
+                ? styles.active
+                : styles.previewConatainer
+            }
+          >
             <p css={styles.previewTitle}>{project.title}</p>
             <div
               css={styles.previewBox}
@@ -58,14 +64,7 @@ function SideScroll(props) {
                 setActiveProject(project.id);
               }}
             >
-              <img
-                src={project.preview}
-                css={
-                  activeProject === project.id
-                    ? styles.active
-                    : styles.previewPic
-                }
-              />
+              <img src={project.preview} css={styles.previewPic} />
             </div>
           </div>
         ))}
@@ -76,7 +75,7 @@ function SideScroll(props) {
           sideScroll(
             document.getElementById("container"),
             "right",
-            25,
+            10,
             400,
             10
           );

@@ -7,9 +7,10 @@ export const intro = css`
   margin: 0 0 6rem 0;
   position: relative;
   z-index: 2;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -27,9 +28,9 @@ export const introContent = css`
   margin-left: 8rem;
   position: relative;
   z-index: 2;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     max-width: 300px;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 `;
 
@@ -37,6 +38,9 @@ export const introTitle = css`
   font-family: Roboto Slab, serif;
   font-size: 3rem;
   color: #021156;
+  @media (max-width: 780px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const introParagraph = css`
@@ -44,6 +48,7 @@ export const introParagraph = css`
   flex-direction: column;
   font-size: 1.125rem;
   color: #021156;
+  line-height: 1.5rem;
 `;
 
 export const introPic = css`
@@ -52,15 +57,18 @@ export const introPic = css`
   max-width: 450px;
   padding-top: 1.5rem;
   margin-right: -2rem;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     padding-top: 0;
     margin-top: -7rem;
     margin-right: -7rem;
+    z-index: 1;
+    max-width: 350px;
   }
 `;
 
 export const seeProjectsButton = css`
   padding: 0.75rem;
+  margin-top: 1rem;
   outline: none;
   border: none;
   border-radius: 20px;
@@ -68,8 +76,10 @@ export const seeProjectsButton = css`
   color: #fffcfe;
   font-weight: bold;
   font-size: 0.75rem;
+  transition: 0.2s;
   &:hover {
     cursor: pointer;
+    background-color: #ff3bbf;
   }
 `;
 
@@ -81,7 +91,7 @@ export const centeredButton = css`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     justify-content: start;
   }
 `;
@@ -90,13 +100,13 @@ export const squareGradient = css`
   height: 35rem;
   width: 35rem;
   position: absolute;
-  index: 1;
+  z-index: -1;
   left: -11rem;
   margin-top: 1rem;
   background: linear-gradient(to bottom, #f6f8fc, transparent);
   transform: rotate(45deg);
   border-radius: 30px;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     height: 25rem;
     width: 25rem;
     left: -8rem;

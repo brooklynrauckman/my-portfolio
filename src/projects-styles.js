@@ -4,7 +4,8 @@ export const projects = css`
   display: flex;
   flex-direction: column;
   margin: 6rem 0;
-  @media (max-width: 1024px) {
+  z-index: 1;
+  @media (max-width: 780px) {
     margin-top: 2rem;
   }
 `;
@@ -16,18 +17,20 @@ export const sideScroll = css`
   align-items: center;
   position: relative;
   z-index: 2;
+  margin: 0 1rem;
+}
 `;
 
 export const scrollArrowCircle = css`
   margin-top: 1.75rem;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 50%;
   background-color: #fcfcfc;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.08);
   &:hover {
     cursor: pointer;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;
@@ -45,8 +48,9 @@ export const previewScroll = css`
   margin: 0 1rem;
   overflow-x: hidden;
   padding-left: 13rem;
+  padding-bottom: 1rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     overflow-x: scroll;
     margin: 0;
     padding-left: 32rem;
@@ -54,6 +58,15 @@ export const previewScroll = css`
 `;
 
 export const previewConatainer = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+  opacity: 0.25;
+`;
+
+export const active = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,17 +91,10 @@ export const previewPic = css`
   height: 175%;
   border-radius: 10px;
   transform: rotate(-45deg);
-  opacity: 0.25;
+
   &:hover {
     cursor: pointer;
   }
-`;
-
-export const active = css`
-  height: 175%;
-  width: auto;
-  border-radius: 10px;
-  transform: rotate(-45deg);
 `;
 
 export const previewTitle = css`
@@ -102,8 +108,8 @@ export const projectView = (activeProject) => css`
   align-items: start;
   justify-content: space-around;
   margin-top: 4rem;
-  @media (max-width: 1024px) {
-    margin-top: 1rem;
+  @media (max-width: 780px) {
+    margin: 1rem;
     flex-direction: column;
     align-items: center;
   }
@@ -134,17 +140,17 @@ export const skillIconCircle = css`
   padding: 0.75rem;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
 `;
 
 export const projectDetails = css`
   max-width: 350px;
-  margin-left: 4rem;
   position: relative;
   z-index: 2;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     margin: 0 1rem 3rem 1rem;
-    max-width: 400px;
+    max-width: 450px;
+    width: 100%;
   }
 `;
 
@@ -152,8 +158,9 @@ export const projectBox = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 40%;
+  width: 100%;
   padding: 1rem;
-  margin-right: 4rem;
   margin-bottom: 0.5rem;
   border-radius: 20px;
   background-color: #fff;
@@ -161,13 +168,14 @@ export const projectBox = css`
   position: relative;
   z-index: 2;
   overflow: hidden;
-  @media (max-width: 1024px) {
-    margin-right: 0;
+  @media (max-width: 780px) {
+    margin: 0;
+    max-width: 450px;
   }
 `;
 
 export const projectPic = css`
-  width: 18rem;
+  width: 100%;
   border-radius: 10px;
   align-self: start;
 `;
@@ -181,8 +189,10 @@ export const visitSiteButton = css`
   color: #fa72ce;
   font-weight: bold;
   font-size: 0.75rem;
+  transition: 0.2s;
   &:hover {
     cursor: pointer;
+    background-color: #ffdbef;
   }
 `;
 
@@ -216,8 +226,10 @@ export const viewCodeButton = css`
   color: #181616;
   font-weight: bold;
   font-size: 0.75rem;
+  transition: 0.2s;
   &:hover {
     cursor: pointer;
+    background-color: #e0e0e0;
   }
 `;
 
@@ -250,12 +262,12 @@ export const projectParagraph = css`
 export const dots = css`
   height: 20rem;
   position: absolute;
-  right: 14rem;
+  right: 4rem;
   z-index: 1;
-  margin-top: 18rem;
-  @media (max-width: 1024px) {
-    right: 1rem;
-    margin-top: 26rem;
+  margin-top: 20rem;
+  @media (max-width: 780px) {
+    right: -8rem;
+    top: 90rem;
   }
 `;
 
@@ -263,13 +275,13 @@ export const squareGradient = css`
   height: 35rem;
   width: 35rem;
   position: absolute;
-  index: 1;
+  z-index: -1;
   right: -6rem;
   margin-top: -2rem;
   background: linear-gradient(to right, #f6f8fc, transparent);
   transform: rotate(45deg);
   border-radius: 20px;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     right: 14rem;
     margin-top: 2rem;
   }
@@ -279,14 +291,14 @@ export const squareGradientTwo = css`
   height: 35rem;
   width: 35rem;
   position: absolute;
-  index: 1;
+  z-index: 1;
   left: 1rem;
   margin-top: 5rem;
   background: linear-gradient(to right, #f6f8fc, transparent);
   transform: rotate(-45deg);
   border-radius: 30px;
-  @media (max-width: 1024px) {
-    left: -10rem;
+  @media (max-width: 780px) {
+    left: -20rem;
     margin-top: 36rem;
   }
 `;

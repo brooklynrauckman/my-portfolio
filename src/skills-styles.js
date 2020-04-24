@@ -6,16 +6,13 @@ export const skills = css`
   justify-content: center;
   align-items: center;
   margin: 6rem 0;
-  @media (max-width: 1024px) {
-    margin-top: 12rem;
-  }
 `;
 
 export const skillsTitle = css`
   font-family: Roboto Slab, serif;
   font-size: 2.25rem;
   color: #021156;
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     position: relative;
     z-index: 2;
   }
@@ -33,6 +30,9 @@ export const skillContainer = css`
   margin: 0 4rem 4rem 0;
   position: relative;
   z-index: 2;
+  @media (max-width: 780px) {
+    margin: 0 3rem 3rem 0;
+  }
 `;
 
 export const skillIcons = css`
@@ -42,6 +42,9 @@ export const skillIcons = css`
   align-items: center;
   justify-content: space-around;
   margin: 5rem 0 5rem 4.5rem;
+  @media (max-width: 780px) {
+    margin: 5rem 0 5rem 3rem;
+  }
 `;
 
 export const skillIcon = css`
@@ -58,21 +61,26 @@ export const skillIconCircle = css`
   padding: 1.5rem;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const squareGradient = css`
   height: 35rem;
   width: 35rem;
   position: absolute;
-  index: 1;
-  right: -5rem;
+  z-index: 1;
+  right: -12rem;
   margin-top: 2rem;
   background: linear-gradient(to bottom, #f6f8fc, transparent);
   transform: rotate(45deg);
   border-radius: 30px;
-  @media (max-width: 1024px) {
-    right: -16rem;
+  @media (max-width: 780px) {
+    right: -20rem;
     margin-top: -25rem;
   }
 `;
@@ -81,14 +89,14 @@ export const squareGradientTwo = css`
   height: 35rem;
   width: 35rem;
   position: absolute;
-  index: 1;
+  z-index: 1;
   left: -4rem;
   margin-top: -2rem;
   background: linear-gradient(to right, #f6f8fc, transparent);
   transform: rotate(-45deg);
   border-radius: 30px;
-  @media (max-width: 1024px) {
-    left: -6rem;
+  @media (max-width: 780px) {
+    left: -13rem;
     margin-top: 18rem;
   }
 `;
