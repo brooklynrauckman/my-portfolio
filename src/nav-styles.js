@@ -6,11 +6,9 @@ export const nav = css`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 1.25rem 2rem;
-  margin: 0 0 6rem 0;
-  @media (max-width: 780px) {
-    padding: 1.25rem 1rem;
-  }
+  padding: 1.25rem 2rem 0rem 2rem;
+  position: relative;
+  overflow-x: hidden;
 `;
 
 export const navLinks = css`
@@ -89,15 +87,6 @@ export const hireMeButton = css`
 
 export const hireMeLink = css`
   outline: none;
-`;
-
-export const triangleGradient = css`
-  height: 35rem;
-  width: auto;
-  position: absolute;
-  z-index: -1;
-  right: -20rem;
-  margin-top: -3rem;
 `;
 
 export const mobileNavRight = css`

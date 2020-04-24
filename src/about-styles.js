@@ -5,8 +5,10 @@ export const about = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  position: relative;
   @media (max-width: 780px) {
-    margin: 4rem 1rem 0 1rem;
+    padding: 4rem 1rem 0 1rem;
   }
 `;
 

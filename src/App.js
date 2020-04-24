@@ -9,6 +9,8 @@ import About from "./About.js";
 function App() {
   return (
     <div css={styles.app}>
+      <img src="/triangle.png" css={styles.triangleGradient} />
+
       <Intro />
       <Projects />
       <Skills />

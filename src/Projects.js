@@ -67,8 +67,8 @@ function Projects() {
                 <button css={styles.visitSiteButton}>Visit Site</button>
               </a>
             </div>
+            <img src="/dots.svg" css={styles.dots} />
           </div>
-          <img src="/dots.svg" css={styles.dots} />
         </div>
       ))}
     </div>

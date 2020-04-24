@@ -7,6 +7,7 @@ export const intro = css`
   margin: 0 0 6rem 0;
   position: relative;
   z-index: 2;
+  padding-top: 6rem;
   @media (max-width: 780px) {
     display: flex;
     flex-direction: column;

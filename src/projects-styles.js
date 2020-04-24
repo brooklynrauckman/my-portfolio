@@ -5,6 +5,7 @@ export const projects = css`
   flex-direction: column;
   margin: 6rem 0;
   z-index: 1;
+  position: relative;
   @media (max-width: 780px) {
     margin-top: 2rem;
   }
@@ -17,7 +18,10 @@ export const sideScroll = css`
   align-items: center;
   position: relative;
   z-index: 2;
-  margin: 0 1rem;
+  padding: 0 1rem;
+  @media (max-width: 780px) {
+    padding: 0;
+  }
 }
 `;
 
@@ -47,13 +51,15 @@ export const previewScroll = css`
   align-items: center;
   margin: 0 1rem;
   overflow-x: hidden;
-  padding-left: 13rem;
-  padding-bottom: 1rem;
+  justify-content: flex-start;
 
   @media (max-width: 780px) {
     overflow-x: scroll;
     margin: 0;
-    padding-left: 32rem;
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
   }
 `;
 
@@ -166,9 +172,10 @@ export const projectBox = css`
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
   position: relative;
-  z-index: 2;
-  overflow: hidden;
+  z-index: 1;
+  overflow: visible;
   @media (max-width: 780px) {
+    z-index: 1;
     margin: 0;
     max-width: 450px;
   }
@@ -263,11 +270,11 @@ export const dots = css`
   height: 20rem;
   position: absolute;
   right: 4rem;
-  z-index: 1;
+  z-index: -1;
   margin-top: 20rem;
   @media (max-width: 780px) {
     right: -8rem;
-    top: 90rem;
+    top: 0rem;
   }
 `;
 

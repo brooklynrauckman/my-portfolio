@@ -44,7 +44,6 @@ function Nav() {
           </div>
           <img src="/close.svg" onClick={() => toggleMenu(!menu)} />
         </div>
-        <img src="/triangle.png" css={styles.triangleGradient} />
       </div>
     </div>
   );

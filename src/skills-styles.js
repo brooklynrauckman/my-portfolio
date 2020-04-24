@@ -5,7 +5,9 @@ export const skills = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 6rem 0;
+  padding: 8rem 0 6rem 0;
+  overflow-x: hidden;
+  position: relative;
 `;
 
 export const skillsTitle = css`
@@ -76,7 +78,7 @@ export const squareGradient = css`
   z-index: 1;
   right: -12rem;
   margin-top: 2rem;
-  background: linear-gradient(to bottom, #f6f8fc, transparent);
+  background: linear-gradient(90deg, white 0%, #f6f8fc 100%);
   transform: rotate(45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
@@ -92,7 +94,7 @@ export const squareGradientTwo = css`
   z-index: 1;
   left: -4rem;
   margin-top: -2rem;
-  background: linear-gradient(to right, #f6f8fc, transparent);
+  background: linear-gradient(90deg, white, #f6f8fc);
   transform: rotate(-45deg);
   border-radius: 30px;
   @media (max-width: 780px) {
