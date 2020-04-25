@@ -38,11 +38,7 @@ function Project(props) {
             </video>
           )}
           <div css={styles.projectLinks}>
-            <a
-              href="https://github.com/brooklynrauckman"
-              target="blank"
-              css={styles.viewCodeLink}
-            >
+            <a href={project.code} target="blank" css={styles.viewCodeLink}>
               <button css={styles.viewCodeButton}>
                 <div css={styles.viewCodeWrapper}>
                   <img css={styles.githubIcon} src="/github.svg" alt="github" />
@@ -50,9 +46,11 @@ function Project(props) {
                 </div>
               </button>
             </a>
-            <a href={project.app} target="blank" css={styles.visitSiteLink}>
-              <button css={styles.visitSiteButton}>Visit Site</button>
-            </a>
+            {project.media === "video" ? null : (
+              <a href={project.app} target="blank" css={styles.visitSiteLink}>
+                <button css={styles.visitSiteButton}>Visit Site</button>
+              </a>
+            )}
           </div>
           <img src="/dots.svg" css={styles.dots} alt="" />
         </div>

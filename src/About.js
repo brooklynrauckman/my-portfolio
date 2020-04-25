@@ -13,13 +13,13 @@ function About() {
           solving problems, and creating things, led me to learn software
           engineering. I enjoy both collaborating with people and zoning-in on
           my work. I love the satisfaction of completing tasks, big and small. I
-          am driven, friendly, honest, flexible, and committed to producing
-          quality work. I chose to create projects with various features, using
-          a variety of tools to build upon my skill set. I have dedicated myself
-          to learning and practicing foundational software engineering skills.
-          Apart from this knowledge, I have experience in various work settings,
-          providing effective communication and collaboration. I am a lifelong
-          learner who looks forward to the opportunity to work with new
+          am highly organized and love to simplify and optimize my workflow as
+          well as my life. I chose to create projects with a variety of features
+          and tools to continue to build upon my skill set. I have dedicated
+          myself to learning and practicing foundational software engineering
+          skills. Apart from this knowledge, I have experience in various work
+          settings, providing effective communication and collaboration. I am a
+          lifelong learner who looks forward to the opportunity to work with new
           technologies and new people.
         </p>
         <div css={styles.centeredButtons}>
