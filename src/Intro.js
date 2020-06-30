@@ -8,9 +8,8 @@ function Intro() {
         <div css={styles.dot}></div>
         <h1 css={styles.introTitle}>Bringing ideas to life</h1>
         <p css={styles.introParagraph}>
-          Hi, my name is Brooklyn! I am a self-taught software engineer, who
-          enjoys simplifying and solving problems. I'm a lifelong learner, ready
-          to take on a new professional challenge.
+          Hi, my name is Brooklyn! I am a lifelong learner and self-taught
+          software engineer, who enjoys simplifying and solving problems.
         </p>
         <div css={styles.centeredButton}>
           <a href="#projects" css={styles.seeProjectsLink}>
