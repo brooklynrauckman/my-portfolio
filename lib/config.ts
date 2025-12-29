@@ -116,7 +116,7 @@ export const skills: Skill[] = [
   {
     title: "Vercel",
     link: "https://vercel.com/",
-    icon: "/netlify.svg",
+    icon: "/vercel.webp",
     id: "Vercel",
   },
   {
